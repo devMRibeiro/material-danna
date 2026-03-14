@@ -73,6 +73,8 @@
       font-size: 14px; font-weight: 600; cursor: pointer;
       transition: opacity .2s, transform .2s;
       text-decoration: none;
+      display: flex;
+      white-space: nowrap;
     }
     .nav-cta:hover { opacity: .9; transform: translateY(-1px); }
 
