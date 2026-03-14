@@ -1,63 +1,432 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Material Danna</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #6200ea;
-            color: white;
-            padding: 20px;
-            width: 100%;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danna Corretora de Seguros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/0bb802f4f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon">D</div>
+      <div class="nav-logo-text">
+        <span>Danna</span>
+        <span>Corretora de Seguros</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#contato" class="nav-cta">Solicitar Cotação</a>
+  </nav>
 
-<header>
-    <h1>Welcome to Material Danna</h1>
-</header>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
 
-<section>
-    <h2>Image Showcase</h2>
-    <img src="path/to/image1.jpg" alt="Description of Image 1">
-    <img src="path/to/image2.jpg" alt="Description of Image 2">
-</section>
+    <div class="hero-content">
+      <div class="hero-badge">28 anos de experiência no mercado</div>
 
-<section>
-    <h2>About Material Danna</h2>
-    <p>Material Danna is a modern approach to showcasing material in an aesthetically pleasing way.</p>
-    <p>Explore the various sections and discover the beauty of materials!</p>
-</section>
+      <h1 class="hero-title">
+        Construir um futuro<br>
+        seguro começa com<br>
+        as <em>escolhas certas.</em>
+      </h1>
 
+      <p class="hero-sub">
+        A Danna é sobre você, sua segurança e seu bem-estar.
+        Somos sua parceira comprometida em proporcionar tranquilidade
+        através de soluções personalizadas de seguros.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">Solicitar Cotação Gratuita</a>
+        <a href="#servicos" class="btn-outline">Conheça nossos serviços</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">28</div>
+          <div class="stat-label">anos no mercado</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10k+</div>
+          <div class="stat-label">clientes protegidos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">atendimento personalizado</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-visual-inner">
+        <svg class="hero-shield" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 10 L180 45 L180 110 C180 155 145 190 100 210 C55 190 20 155 20 110 L20 45 Z" fill="white"/>
+          <path d="M75 108 L92 125 L128 90" stroke="#0D1B2A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="sobre-grid">
+      <div class="sobre-text-col">
+        <div class="section-label">Quem somos</div>
+        <h2 class="section-title">Não somos apenas<br><em>uma corretora!</em></h2>
+        <p class="sobre-body">
+          Na Danna Corretora de Seguros, nossa prioridade é proteger o que é mais
+          importante para você. Com anos de experiência no mercado, somos conhecidos
+          por nossa confiança, transparência e compromisso com um atendimento personalizado.
+        </p>
+        <p class="sobre-body">
+          Nossa missão é oferecer soluções de seguros que proporcionem segurança e
+          tranquilidade aos nossos clientes, sempre com excelência e clareza em cada
+          etapa do processo.
+        </p>
+
+        <div class="sobre-pillars">
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-crosshairs"></i></div>
+            <div class="pillar-info">
+              <h4>Nossa Missão</h4>
+              <p>Oferecer soluções que proporcionem segurança e tranquilidade com excelência.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-regular fa-handshake"></i></div>
+            <div class="pillar-info">
+              <h4>Nosso Compromisso</h4>
+              <p>Confiança, transparência e atendimento personalizado em cada interação.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="pillar-info">
+              <h4>Nosso Propósito</h4>
+              <p>Cuidar de você e do seu bem-estar como se fosse nossa própria família.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-visual-col">
+        <div class="sobre-card">
+          <div class="sobre-card-quote">
+            "Um lar seguro é um<br>coração <em>tranquilo.</em>"
+          </div>
+          <div class="sobre-card-sub">A Danna é sobre você, sua segurança e seu bem-estar.</div>
+        </div>
+
+        <div class="sobre-stats-row">
+          <div class="sobre-stat">
+            <div class="sobre-stat-number">28</div>
+            <div class="sobre-stat-label">anos oferecendo o que é importante para você</div>
+          </div>
+          <div class="sobre-stat">
+            <div class="sobre-stat-number">+10</div>
+            <div class="sobre-stat-label">tipos de seguros para proteger sua vida</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="servicos-header">
+      <div>
+        <div class="section-label">O que oferecemos</div>
+        <h2 class="section-title">Seguro auto, vida, saúde,<br>residencial e muito mais</h2>
+      </div>
+      <p class="section-sub">
+        Soluções completas de proteção para cada fase da sua vida,
+        para a sua família e para o seu negócio.
+      </p>
+    </div>
+
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <div class="servico-icon"><i class="fa-solid fa-car"></i></div>
+        <h3 class="servico-title">Seguro Auto</h3>
+        <p class="servico-desc">
+          Seu carro é parte do seu dia a dia e das suas conquistas. Proteja-o contra
+          roubos, colisões e imprevistos com suporte rápido e eficiente da nossa equipe.
+        </p>
+        <a href="#contato" class="servico-link">Solicitar cotação →</a>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon"><i class="fa-regular fa-heart"></i></div>
+        <h3 class="servico-title">Seguro de Vida</h3>
+        <p class="servico-desc">
+          Mais do que proteção financeira — é a tranquilidade de saber que sua família
+          estará segura. Menores de idade também podem ser incluídos como beneficiários.
+        </p>
+        <a href="#contato" class="servico-link">Solicitar cotação →</a>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon"><i class="fa-solid fa-house"></i></div>
+        <h3 class="servico-title">Seguro Residencial</h3>
+        <p class="servico-desc">
+          Não há lugar como o nosso lar. Cobertura completa para que você viva com
+          tranquilidade, protegendo seu patrimônio contra qualquer imprevisto.
+        </p>
+        <a href="#contato" class="servico-link">Solicitar cotação →</a>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon"><i class="fa-solid fa-building"></i></div>
+        <h3 class="servico-title">Seguro Empresarial</h3>
+        <p class="servico-desc">
+          MEI, pequena ou grande empresa — existem opções para todos os tamanhos.
+          Proteja seus colaboradores e a estabilidade do seu negócio.
+        </p>
+        <a href="#contato" class="servico-link">Solicitar cotação →</a>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon"><i class="fa-regular fa-hospital"></i></div>
+        <h3 class="servico-title">Seguro Saúde</h3>
+        <p class="servico-desc">
+          Cuidar da saúde é o maior investimento. Planos com coberturas flexíveis
+          para você e sua família terem acesso à melhor assistência médica.
+        </p>
+        <a href="#contato" class="servico-link">Solicitar cotação →</a>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3 class="servico-title">Consultoria em Seguros</h3>
+        <p class="servico-desc">
+          Não sabe qual seguro contratar? Nossa equipe especializada analisa seu
+          perfil e indica as melhores soluções com clareza e sem enrolação.
+        </p>
+        <a href="#contato" class="servico-link">Falar com especialista →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="depoimentos-header">
+      <div class="section-label">Depoimentos</div>
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+    </div>
+
+    <div class="depoimentos-grid">
+      <div class="depoimento-card">
+        <div class="depoimento-stars">★★★★★</div>
+        <p class="depoimento-text">
+          "Quando procurei a Danna Corretora, eu não fazia ideia de como um seguro de vida
+          poderia realmente me ajudar. Mas desde o primeiro contato, fui surpreendido pela
+          atenção e cuidado que recebi. Eles entenderam exatamente o que eu precisava e me
+          ofereceram a solução perfeita, sem enrolação."
+        </p>
+        <div class="depoimento-author">
+          <div class="depoimento-avatar">M</div>
+          <div>
+            <div class="depoimento-name">Marcos Oliveira</div>
+            <div class="depoimento-role">Cliente — Seguro de Vida</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimento-card">
+        <div class="depoimento-stars">★★★★★</div>
+        <p class="depoimento-text">
+          "Contratei o seguro residencial e fiquei impressionada com o atendimento.
+          Qualquer dúvida que tenho é respondida rapidamente. Sinto que realmente me
+          importo como cliente, não apenas como mais um número."
+        </p>
+        <div class="depoimento-author">
+          <div class="depoimento-avatar">A</div>
+          <div>
+            <div class="depoimento-name">Ana Carvalho</div>
+            <div class="depoimento-role">Cliente — Seguro Residencial</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimento-card">
+        <div class="depoimento-stars">★★★★★</div>
+        <p class="depoimento-text">
+          "Tive um sinistro no meu carro e a Danna resolveu tudo de forma rápida e
+          transparente. Me senti amparado em um momento difícil. Com certeza vou
+          renovar meu seguro e indicar para todos os amigos."
+        </p>
+        <div class="depoimento-author">
+          <div class="depoimento-avatar">R</div>
+          <div>
+            <div class="depoimento-name">Ricardo Santos</div>
+            <div class="depoimento-role">Cliente — Seguro Auto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="contato-grid">
+      <div class="contato-text-col">
+        <div class="section-label">Fale conosco</div>
+        <h2 class="section-title">Solicite sua<br>cotação gratuita</h2>
+        <p class="section-sub">
+          Nossa equipe está pronta para te ajudar a encontrar
+          a melhor proteção para você, sua família ou empresa.
+        </p>
+
+        <div class="contato-items">
+          <div class="contato-item">
+            <div class="contato-item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contato-item-info">
+              <span>Telefone</span>
+              <span>(xx) xxxxx-xxxx</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contato-item-info">
+              <span>WhatsApp</span>
+              <span>(xx) xxxxx-xxxx</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-item-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="contato-item-info">
+              <span>E-mail</span>
+              <span>contato@dannaseguros.com.br</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-item-icon"><i class="fa-solid fa-map-pin"></i></div>
+            <div class="contato-item-info">
+              <span>Endereço</span>
+              <span>Seu endereço aqui</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 class="form-title">Solicitar Cotação</h3>
+        <p class="form-subtitle">Preencha o formulário e entraremos em contato em breve.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nome completo</label>
+            <input type="text" placeholder="Seu nome" />
+          </div>
+          <div class="form-group">
+            <label>Telefone / WhatsApp</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="seu@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Tipo de Seguro</label>
+            <select>
+              <option value="">Selecione...</option>
+              <option>Seguro Auto</option>
+              <option>Seguro de Vida</option>
+              <option>Seguro Residencial</option>
+              <option>Seguro Empresarial</option>
+              <option>Seguro Saúde</option>
+              <option>Outro / Consultoria</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full">
+            <label>Mensagem (opcional)</label>
+            <textarea placeholder="Conte um pouco mais sobre o que você precisa..."></textarea>
+          </div>
+        </div>
+
+        <button class="form-submit" type="button">Enviar Solicitação de Cotação</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <div class="footer-logo-icon">D</div>
+          <div class="footer-logo-text">
+            <span>Danna</span>
+            <span>Corretora de Seguros</span>
+          </div>
+        </div>
+        <p class="footer-brand-desc">
+          Confie em quem está sempre por perto para cuidar do seu futuro.
+          A Danna é sobre você, sua segurança e seu bem-estar.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#servicos">Seguro Auto</a></li>
+          <li><a href="#servicos">Seguro de Vida</a></li>
+          <li><a href="#servicos">Seguro Residencial</a></li>
+          <li><a href="#servicos">Seguro Empresarial</a></li>
+          <li><a href="#servicos">Seguro Saúde</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="#sobre">Sobre a Danna</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="#">(xx) xxxxx-xxxx</a></li>
+          <li><a href="#">contato@dannaseguros.com.br</a></li>
+          <li><a href="#">Seu endereço aqui</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Danna Corretora de Seguros. Todos os direitos reservados.</p>
+      <p>CNPJ: xx.xxx.xxx/0001-xx &nbsp;|&nbsp; SUSEP: xxxxxxx</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5515991642319" target="_blank" class="float-wa" title="Fale pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </body>
 </html>
